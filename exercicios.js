@@ -1,14 +1,18 @@
-// -------------------------------------
-
 /**
  * Função que calcula a soma de 2 números
  * @param {number} a - O primeiro número.
  * @param {number} b - O segundo número.
  * @returns {number} A soma dos dois numeros
  */
+
 function soma(a, b) {
-  // @todo implementar retorno da operação aqui
+  return a + b;
 }
+let valorsoma = soma(3, 4);
+console.log(`A soma dos dois números é ${valorsoma}.`);
+// -------------------------------------
+
+
 
 /**
  * Função que calcula a multiplicação de 2 números
@@ -16,9 +20,14 @@ function soma(a, b) {
  * @param {number} b - O segundo número.
  * @returns {number} A multiplicação dos dois numeros
  */
-function multiplicacao(a, b) {
-  // @todo implementar retorno da operação aqui
+function multiplic(a, b) {
+  return a * b;
 }
+let valormultiplic = multiplic(3, 4);
+console.log(`A multiplicação dos dois números é ${valormultiplic}.`);
+// -------------------------------------
+
+
 
 /**
  * Função que calcula a divisão de 2 números
@@ -27,8 +36,14 @@ function multiplicacao(a, b) {
  * @returns {number} A divisão dos dois numeros
  */
 function divisao(a, b) {
-  // @todo implementar retorno da operação aqui
+  return a / b;
 }
+
+let valordivisao = divisao(28, 4);
+console.log(`A divisão dos dois números é ${valordivisao}.`);
+// -------------------------------------
+
+
 
 /**
  * Função que calcula a subtração de 2 números
@@ -37,8 +52,14 @@ function divisao(a, b) {
  * @returns {number} A subtração dos dois numeros
  */
 function subtracao(a, b) {
-  // @todo implementar retorno da operação aqui
+  return a - b;
 }
+
+let valorsubtracao = subtracao(28, 4);
+console.log(`A subtração dos dois números é ${valorsubtracao}.`);
+// -------------------------------------
+
+
 
 /**
  * Função que resto da divisão de 2 números
@@ -47,8 +68,14 @@ function subtracao(a, b) {
  * @returns {number} O resto da divisão dos dois numeros
  */
 function modulo(a, b) {
-  // @todo implementar retorno da operação aqui
+  return a % b;
 }
+
+let valormodulo = modulo(30, 4);
+console.log(`O módulo dos dois números é ${valormodulo}.`);
+// -------------------------------------
+
+
 
 /**
  * Função que calcula o maior número entre 2
@@ -56,11 +83,20 @@ function modulo(a, b) {
  * @param {number} b - O segundo número.
  * @returns {number} O maior número
  */
-function max(a, b) {
-  // @todo implementar retorno da operação aqui
+function max(num1, num2) {
+  if (num1 > num2) {
+    return num1;
+  } else {
+    return num2;
+  }
 }
 
+let numMax = max(7, 1);
+console.log(`O número maior é ${numMax}.`);
+
 // -------------------------------------
+
+
 
 /**
  * Função que concatena 2 strings utilizando template strings
@@ -69,10 +105,14 @@ function max(a, b) {
  * @returns {string} As 2 strings concatenadas
  */
 function strConcat(a, b) {
-  // @todo implementar retorno da operação aqui
+  return `A verdade é que o ${a} é ${b}.`;
+
 }
+console.log(strConcat('Rosseti', 'gay'));
 
 // --------------------------------------
+
+
 
 /**
  * Função que implementa controle de fluxo
@@ -84,22 +124,44 @@ function strConcat(a, b) {
  *  - "Menor que 10" quando o número é menor que 10
  */
 function retornaNumero(numero) {
-  // @todo implementar retorno da operação aqui
+  if (numero > 10) {
+    console.log(`O número ${numero} é maior do que 10.`);
+
+  } else if (numero < 10) {
+    console.log(`O número ${numero} é menor do que 10.`);
+
+  } else {
+    console.log(`O número ${numero} é igual 10.`);
+  }
 }
+let valorNumero = retornaNumero(8);
 
 // --------------------------------------
+
+
+
 
 /**
  * Função que valida se o número em questão é positivo
  * @param {number} num - Número em questão
  * @returns {boolean} Retorna true para números positivos
  */
-function ehPositivo(num) {
-  // @todo implementar retorno da operação aqui
+function ehPositivo(numero) {
+  if (numero > 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
-module.exports = 
-{ 
+let valorNumero = ehPositivo(-7);
+console.log(valorNumero);
+
+// -------------------------------------
+
+
+module.exports =
+{
   soma,
   multiplicacao,
   divisao,
